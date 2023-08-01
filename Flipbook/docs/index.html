@@ -54,6 +54,8 @@ function loadApp() {
 		return;
 	}
 
+	$('.sample-docs .double').scissor();
+
 	// Mousewheel
 
 	$('#book-zoom').mousewheel(function(event, delta, deltaX, deltaY) {
@@ -249,10 +251,6 @@ function loadApp() {
 		}
 	}
 	}). turn('page', 2);
-
-	// Set the flipbook size to landscape mode
-	
-	flipbook.turn("size", 816, 1056);
 
 
 	$('#slider').slider('option', 'max', numberOfViews(flipbook));
